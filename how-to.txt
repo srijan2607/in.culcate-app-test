@@ -25,3 +25,5 @@ controllers :-
 
 
 
+catagorey by id 
+5 article 

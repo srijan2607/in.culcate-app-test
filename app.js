@@ -10,6 +10,7 @@ const prisma = require("./db/connect");
 // Routers
 const article = require("./routers/article");
 const auth = require("./routers/auth");
+const home_page = require("./routers/home_page");
 const Authentication = require("./middleware/authentication");
 
 // Security Packages
@@ -29,6 +30,7 @@ app.use(xss());
 // Routes Middleware
 app.use("/api/consumer/v1/article", article);
 app.use("/api/consumer/v1/auth", auth);
+app.use("/api/consumer/v1/home_page", home_page);
 
 // Server Port
 const port = process.env.PORT || 6006;
