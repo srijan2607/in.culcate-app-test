@@ -28,7 +28,7 @@ app.use(cors());
 app.use(xss());
 
 // Routes Middleware
-app.use("/api/consumer/v1/article", article);
+app.use("/api/consumer/v1/article", Authentication, article);
 app.use("/api/consumer/v1/auth", auth);
 app.use("/api/consumer/v1/home_page", home_page);
 
